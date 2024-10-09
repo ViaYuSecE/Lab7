@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        li {
+            padding: 5px;
+            background-color: #ddd;
+        }
+    </style>
+    <title>Lab 7: HTML and CSS Basics</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        function changeBackground() {
+            let background = document.body;
+            background.style.backgroundColor = "#ffccff";
+        }
+
+        function addItem() {
+            let list = document.querySelector('ul');
+            list.innerHTML += "<li>New Item</li>";
+        }
+
+        function darkMode() {
+            let paragraph = document.querySelector('p');
+            paragraph.style.color = "#FFFFFF";
+
+            let header = document.querySelector('h1');
+            header.style.color = "#FFFFFF";
+
+            let ulist = document.querySelector('ul');
+            ulist.style.color = "#71797E";
+
+            let background = document.body;
+            background.style.backgroundColor = "#000000";
+        }
+
+    </script>
+
+    <h1>Welcome to HTML and CSS Basics</h1>
+    <p>Some placeholder text</p>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <button onclick="changeBackground()">Change Background</button>
+    <button onclick="addItem()">Add Item</button>
+    <br>
+    <br>
+    <button onclick="darkMode()">Dark Mode</button>
+
+</body>
+
+</html>
